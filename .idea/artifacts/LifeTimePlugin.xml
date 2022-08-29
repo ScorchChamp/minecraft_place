@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="LifeTimePlugin">
+    <output-path>$PROJECT_DIR$/../Minecraft_Place_Server/plugins</output-path>
+    <root id="archive" name="LifeTimePlugin.jar">
+      <element id="module-output" name="MinecraftPlace" />
+      <element id="library" level="project" name="latest" />
+    </root>
+  </artifact>
+</component>

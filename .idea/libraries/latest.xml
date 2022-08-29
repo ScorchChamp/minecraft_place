@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="latest">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../1.19_latest.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

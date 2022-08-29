@@ -1,0 +1,44 @@
+name: LifeTimePlugin
+main: com.scorchchamp.MinecraftPlace.MinecraftPlace
+version: 0.0.1
+api-version: 1.13
+website: www.scorchchamp.com
+author: ScorchChamp
+prefix: Place
+
+commands:
+  setup:
+    description: Setup place canvas. This overrides any older canvas!
+    usage: /setup <x1> <y1> <z1> <x2> <y2> <z2>
+  start:
+    description: Start place
+    usage: /start
+  pause:
+    description: Pause the canvas
+    usage: /pause
+  lockdown:
+    description: Toggles lockdown. Pauses the canvas and kicks everyone. Only admins are allowed back!
+    usage: /lockdown
+
+
+permissions:
+  MinecraftPlace.setup:
+    description: Allows setting up canvas
+    default: op
+  MinecraftPlace.start:
+    description: Allows starting the canvas
+    default: op
+  MinecraftPlace.pause:
+    description: Allows pausing the canvas
+    default: op
+  MinecraftPlace.lockdown:
+    description: Allows Locking down the server
+    default: op
+  MinecraftPlace.*:
+    description: Wildcard permission for MinecraftPlace
+    default: op
+    children:
+      MinecraftPlace.setup: true
+      MinecraftPlace.start: true
+      MinecraftPlace.pause: true
+      MinecraftPlace.lockdown: true
